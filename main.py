@@ -32,6 +32,14 @@ def analyze_business(data):
 
     return response.choices[0].message.content
 
+from engine import RuleEngine
+
+engine = RuleEngine()
+
+flags = engine.evaluate(business_data)
+
+for f in flags:
+    print(f)
 
 if __name__ == "__main__":
     # Example input data
