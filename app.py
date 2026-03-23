@@ -2,6 +2,16 @@ import streamlit as st
 from engine import RuleEngine
 from ai import generate_ai_report
 
+st.markdown("""
+<style>
+    .stButton button {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 st.set_page_config(page_title="AI Business Monitor", layout="wide")
 
 st.title("📊 AI Business Health Monitor")
